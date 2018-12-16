@@ -25,6 +25,11 @@ pre {
     white-space: pre-wrap;
   }
 
+  .poem-text{
+    line-height: 0.5em;
+    margin: 0.2em 0;
+  }
+
   .poem-footer {
     font-size: 0.9rem;
   }
