@@ -14,13 +14,12 @@
           <div class="row">
             <div class="col">
             </div>
-            <div class="col-sm-7">
-<div class="poem-content">
-    <h3>   {{ .Title }} </h3> 
+            <div class="col-sm-7 poem-content">
+    <h3>{{ .Title }} </h3> 
         {{ .Content }}
     
     </div>
-    <p class="poem-footer"><br><br>&copy; {{ now.Format "2006"}} {{ .Site.Title}} </p>
+    <p class="poem-footer">&copy; {{ now.Format "2006"}} {{ .Site.Title}} </p>
 
   </div>
 
@@ -28,10 +27,6 @@
             </div>
 
           </div>
-        </div>
-
-
     </main>
-    <footer><div> <p><br></p></div></footer>
   </body>
 </html>
