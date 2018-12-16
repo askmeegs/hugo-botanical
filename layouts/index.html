@@ -9,6 +9,8 @@
         <div class="container">
          <div class="row">
             <div class="spacer col-sm p-3 mb-3 green poemlist rounded text-center">
+             <h3 class="col-sm poemheader">Online</h3>
+
             {{ range .Site.Params.ExternalLink }}
                 <p class="poemlink"><a href="{{ .link }}">"{{ .name }}"</a>
                 </p>
@@ -17,6 +19,7 @@
 
             {{ range .Pages.GroupBy "Section" }}
             <div class="spacer col-sm p-3 mb-3 green poemlist rounded text-center">
+                    <h3 class="col-sm poemheader">{{ .Key }} </h3>
                     {{ range .Pages }}
                         <p class="poemlink"><a href="{{ .Permalink }}">"{{ .Title }}"</a>
                         </p>

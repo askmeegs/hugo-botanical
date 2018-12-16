@@ -1,7 +1,26 @@
+
+    <!-- Begin page content -->   
+        <header class="blog-header py-3">
+          <div class="row flex-nowrap justify-content-center align-items-center">
+            <div class="col-4 text-center">
+              <a class="blog-header-logo text-dark" href="index.html">Megan O'Keefe</a>
+            </div>
+          </div>
+        </header>
+     
+  
+        <div class="nav-scroller py-1 mb-2">
+          <nav class="nav d-flex justify-content-center">
+            <a class="navbarlink p-2 text-muted" href="about.html">About</a>
+        </div>
+        <br>
+  
+
+
 <header class="blog-header py-3">
     <div class="row flex-nowrap justify-content-center align-items-center">
       <div class="col-4 text-center">
-          <a class="blog-header-logo text-dark"  href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+          <a class="blog-header-logo text-dark"  href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
       </div>
     </div>
   </header>
@@ -10,7 +29,7 @@
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-center">
       {{ range .Site.Menus.main -}}
-        <li><a class="navbarlink p-2 text-muted"  href="{{.URL}}"> {{ .Name }} </a></li>
+        <a class="navbarlink p-2 text-muted"  href="{{.URL}}"> {{ .Name }} </a>
       {{- end }}
   </div>
   <br>
