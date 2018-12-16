@@ -8,18 +8,15 @@
             <main role="main" class="container"></main>
         {{- partial "header.html" . -}}
         <div id="content">
-<p>using poem layout</p>
-
 <div class="container">
         <div class="row">
             <div class="col">
             </div>
             <div class="col-sm-7">
     <div class="poem ">
-    <h3>{{.Title}} </h3> 
-        {{ .Content }}
+    <h3>{{.Title}} </h3>{{ .Content }}
     </div>
-    <p><br><br>© {{ now.Format "2006"}} {{ .Site.Author }} </p>
+    <p><br><br>© {{ .now.Format "2006"}} {{ .Site.Title}} </p>
     </div>
     
             <div class="col">
