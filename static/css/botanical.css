@@ -14,7 +14,12 @@ pre {
   }
   
   .green{
-    background-color: rgb(163,224,128, 0.07);
+    background-color: rgba(163,224,128, 0.07);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   .spacer{
