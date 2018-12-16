@@ -1,21 +1,10 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
-name = "Hugo Botanical"
+name = "Botanical"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
+licenselink = "https://github.com/m-okeefe/hugo-botanical/blob/master/LICENSE"
+description = "a portfolio theme"
+tags = ["poetry", "writing", "portfolio", "static", "clean", "minimal", "green"]
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Megan O'Keefe"
+  homepage = "https://m-okeefe.net"

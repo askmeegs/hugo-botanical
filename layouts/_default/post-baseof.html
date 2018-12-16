@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <h1>Posts</h1>
+  {{ range .Pages }}
+    <article>
+      <h2>{{ .Title }}</h2>
+      {{ .Content }}
+    </article>
+  {{ end }}
+{{ end }}
+
+
+
+
+<main role="main" class="container">
+    <br>
+        <div class="container">
+            <div class="row">
+              <div class="col">
+              </div>
+              <div class="col-sm-7">
+  <div class="poem ">
+      <h3>{{ .Title }}</h3> 
+      {{ .Content }}
+      
+      </div>
+      <p><br><br>© {{ $.Site.Author }}</p>
+  
+    </div>
+
+        <div class="col">
+        </div>
+
+    </div>
+    </div>
+  
+  
+      </main>
+      <br>
