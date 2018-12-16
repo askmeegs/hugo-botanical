@@ -19,7 +19,7 @@
 
             <div class="spacer col-sm p-3 mb-3 green poemlist rounded text-center">
                     <h3 class="col-sm poemheader">Archive</h3>
-                    {{ range .Pages }}
+                    {{ range where .Pages "File.Dir" "in" "/content/poems/" }}
                         <p class="poemlink"><a href="{{ .Permalink }}">"{{ .Title }}"</a></p>
                     {{ end }}
               </div>
