@@ -16,9 +16,8 @@
             </div>
             <div class="col-sm-7">
 <div class="poem-content">
-    <h3>{{ .Title }} </h3><pre>
-        {{ .Content }}
-        </pre>
+    <h3>{{ .Title }} </h3>
+        {{ - .Content - }}
     
     </div>
     <p class="poem-footer">&copy; {{ now.Format "2006"}} {{ .Site.Title}} </p>
