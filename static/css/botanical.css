@@ -21,8 +21,9 @@ pre {
     margin: 0.3rem;
   }
   
-  .poem{
+  p .poem-content{
     white-space: pre-wrap;
+    padding-bottom: 0px;
   }
 
   .poem-footer {
