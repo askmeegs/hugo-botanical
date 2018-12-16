@@ -24,6 +24,10 @@ pre {
   .poem{
     white-space: pre-wrap;
   }
+
+  .poem-footer {
+    font-size: 0.8rem;
+  }
   
   .blog-header {
     font-size: 4.2rem;
