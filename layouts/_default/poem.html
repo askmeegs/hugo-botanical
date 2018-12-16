@@ -15,10 +15,11 @@
             <div class="col-sm-7 poem-content">
     <h4>{{.Title}} </h4>{{ .Content }}
     </div>
-    <p class="poemfooter"><br><br>&copy; {{ now.Format "2006"}} {{ .Site.Title}} </p>
     </div>
-    <footer><div> <p><br></p></div></footer>
 
+    <footer>
+    <p class="poemfooter"><br><br>&copy; {{ now.Format "2006"}} {{ .Site.Title}} </p>
+</footer>
         </div>
     
     
