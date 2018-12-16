@@ -5,7 +5,20 @@
         <p>hello world</p>
         {{- partial "header.html" . -}}
         <div id="content">
-        {{- block "main" . }}{{- end }}
+
+
+            <!-- Groups content according to content section. The ".Key" in this instance will be the section's title. -->
+            {{ range .Pages.GroupBy "Section" }}
+            <h3>{{ .Key }}</h3>
+            <ul>
+                {{ range .Pages }}
+                <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+
         </div>
     </body>
 </html>
