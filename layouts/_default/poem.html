@@ -1,32 +1,37 @@
+<!doctype html>
+<html lang="en">
+        {{- partial "head.html" . -}}
+  <body>
 
+    <!-- Begin page content -->
+    <main role="main" class="container">
+   
+            {{- partial "header.html" . -}}
+  
+  <br>
 
-
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-            <main role="main" class="container"></main>
-        {{- partial "header.html" . -}}
-        <div id="content">
-<div class="container">
-        <div class="row">
+      <div class="container" id="content">
+          <div class="row">
             <div class="col">
             </div>
-            <div class="col-sm-7 poem-content">
-    <h4>{{.Title}} </h4>{{ .Content }}
+            <div class="col-sm-7">
+<div class="poem ">
+    <h3>    {{ .Title }} </h3> 
+        {{ .Content }}
+    
     </div>
-    </div>
-
-    <footer>
     <p class="poemfooter"><br><br>&copy; {{ now.Format "2006"}} {{ .Site.Title}} </p>
-</footer>
+
+  </div>
+
+            <div class="col">
+            </div>
+
+          </div>
         </div>
-    
-    
+
+
     </main>
-
-        </div>
-
-    </body>
-</main>
+    <footer><div> <p><br></p></div></footer>
+  </body>
 </html>
