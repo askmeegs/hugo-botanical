@@ -2,23 +2,31 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
-        <p>hello world</p>
+            <main role="main" class="container"></main>
         {{- partial "header.html" . -}}
         <div id="content">
 
-
-            <!-- Groups content according to content section. The ".Key" in this instance will be the section's title. -->
-            {{ range .Pages.GroupBy "Section" }}
-            <h3>{{ .Key }}</h3>
-            <ul>
-                {{ range .Pages }}
-                <li>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </li>
-                {{ end }}
-            </ul>
+        <div class="container">
+         <div class="row">
+            <div class="spacer col-sm p-3 mb-3 green poemlist rounded text-center">
+            {{ range .Site.Params.ExternalLink }}
+                <p class="poemlink"><a href="{{ .link }}">"{{ .name }}"</a>
+                </p>
             {{ end }}
+            </div>
+
+            {{ range .Pages.GroupBy "Section" }}
+            <div class="spacer col-sm p-3 mb-3 green poemlist rounded text-center">
+                    {{ range .Pages }}
+                        <p class="poemlink"><a href="{{ .Permalink }}">"{{ .Title }}"</a>
+                        </p>
+                    {{ end }}
+              </div>
+          {{ end }}
 
         </div>
+    </div> 
+    </div>
     </body>
+</main>
 </html>
