@@ -1,34 +1,23 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-            <main role="main" class="container"></main>
-        {{- partial "header.html" . -}}
 
-            <div class="container">
-                <div class="row">
-                  <div class="col">
-                  </div>
-                  <div class="col-sm-7">
-      <div class="poem ">
-          <h3>     {{.Title}} </h3> 
-              {{ .Content }}
-          </div>
-          <p><br><br>© {{ .Date.Format "2006" }} {{ .Site.Author }} </p>
+<div class="container">
+    <div class="row">
+        <div class="col">
         </div>
-      
-                  <div class="col">
-                  </div>
-      
-                </div>
-              </div>
-      
-      
-          </main>
-          <footer><div> <p><br></p></div></footer>
+        <div class="col-sm-7">
+<div class="poem ">
+<h3>{{.Title}} </h3> 
+    {{ .Content }}
+</div>
+<p><br><br>© {{ now.Format "2006"}} {{ .Site.AuthorFormat }} </p>
+</div>
 
-    </div> 
+        <div class="col">
+        </div>
+
     </div>
-    </body>
+    </div>
+
+
 </main>
-</html>
+<footer><div> <p><br></p></div></footer>
+
