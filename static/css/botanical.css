@@ -164,11 +164,6 @@ pre {
     margin-bottom: 0;
   }
 
-
-  @media (max-width: @screen-xs) {
-    body{font-size: 10px;}
-}
-
-@media (max-width: @screen-sm) {
-    body{font-size: 14px;}
+body {
+  font-size: 3.2vw;
 }
