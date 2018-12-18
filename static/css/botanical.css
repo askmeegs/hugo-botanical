@@ -141,13 +141,7 @@ pre {
     font-size: 1.1rem;
     color: #999;
   }
-  
-  @media (min-width: 40em) {
-    .blog-title {
-      font-size: 3.5rem;
-    }
-  }
-  
+
   /* Pagination */
   .blog-pagination {
     margin-bottom: 4rem;
@@ -169,3 +163,12 @@ pre {
   .blog-footer p:last-child {
     margin-bottom: 0;
   }
+
+
+  @media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
